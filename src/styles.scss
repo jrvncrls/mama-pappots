@@ -6,8 +6,8 @@
   --h1: 800 2rem / 1.2em var(--ff);
   --h2: 800 1.5rem / 1.5em var(--ff);
   --h3: 800 1.25rem / 1.2em var(--ff);
-  --p: 400 1rem / 1.5em var(--ff);
-  --caption: 400 0.875rem / 2em var(--ff);
+  --p: 300 1rem / 1.5em var(--ff);
+  --caption: 300 0.875rem / 2em var(--ff);
   --primary-color: hsl(90, 80%, 20%, 100%);
   --text-primary: hsl(30, 50%, 10%, 80%);
   --text-white: hsl(0, 0%, 100%, 100);
@@ -21,6 +21,14 @@ body {
   font: var(--p);
 }
 
+h1,
+h2,
+h3,
+p,
+label {
+  margin: 0;
+}
+
 h1 {
   font: var(--h1);
 }
@@ -31,6 +39,10 @@ h2 {
 
 h3 {
   font: var(--h3);
+}
+
+p, label {
+  font: var(--p);
 }
 
 .caption {

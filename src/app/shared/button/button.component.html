@@ -1,0 +1,10 @@
+<button
+  class="btn"
+  [ngClass]="{
+    'btn-primary': color() === 'primary',
+    'btn-secondary': color() === 'secondary'
+  }"
+  [ngStyle]="{ 'border-radius': borderRadius() + 'px' }"
+>
+  <label>{{ label() }}</label>
+</button>
