@@ -11,5 +11,5 @@ export class ButtonComponent {
   label = input('Button');
   color = input<'primary' | 'secondary'>('primary');
   borderRadius = input<10 | 30>(10);
-  clickChange = output();
+  clickChange = output<boolean>();
 }

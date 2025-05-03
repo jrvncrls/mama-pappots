@@ -5,6 +5,7 @@
     'btn-secondary': color() === 'secondary'
   }"
   [ngStyle]="{ 'border-radius': borderRadius() + 'px' }"
+  (click)="clickChange.emit(true)"
 >
   {{ label() }}
 </button>
