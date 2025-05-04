@@ -1,0 +1,43 @@
+header {
+  border-bottom: 1px solid var(--border-color);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row-reverse;
+
+    @media (min-width: 1024px) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .uil {
+      font-size: 2rem;
+      margin-right: 1.5rem;
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+
+    .nav-container {
+      display: none;
+
+      @media (min-width: 1024px) {
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
