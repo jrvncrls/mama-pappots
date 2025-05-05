@@ -6,10 +6,10 @@
 
   &.btn-primary {
     background-color: var(--primary-color);
-    color: var(--text-white);
+    color: var(--white);
 
     &:hover {
-      background-color: var(--text-white);
+      background-color: var(--white);
       color: var(--primary-color);
       outline: 1px solid var(--primary-color);
     }

@@ -16,4 +16,14 @@
       ></app-button>
     </div>
   </section>
+
+  <section class="best-seller-section">
+    <h1>Our Best Sellers</h1>
+
+    <div class="card-list fade-in-text fade-in-delay-1">
+      @for (item of BEST_SELLERS; track $index) {
+      <app-best-seller-card class="item" [item]="item"></app-best-seller-card>
+      }
+    </div>
+  </section>
 </div>

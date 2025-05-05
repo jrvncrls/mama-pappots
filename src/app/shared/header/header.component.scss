@@ -2,7 +2,8 @@ header {
   border-bottom: 1px solid var(--border-color);
   position: fixed;
   width: 100%;
-  background-color: var(--text-white);
+  background-color: var(--white);
+  z-index: 2;
 
   @media (min-width: 1024px) {
     justify-content: space-between;

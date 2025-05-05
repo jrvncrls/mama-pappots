@@ -2,7 +2,7 @@
   width: 100%;
 
   @media (min-width: 1024px) {
-    height: 690px;
+    height: 620px;
     background-image: url("/images/hero.webp");
     display: flex;
     justify-content: center;
@@ -54,6 +54,44 @@
 
       @media (min-width: 1024px) {
         font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.best-seller-section {
+  padding: 4rem 1rem;
+  background-color: var(--background-secondary);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-weight: 300;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+  }
+
+  .card-list {
+    max-width: 1060px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    .item {
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      @media (min-width: 1024px) {
+        flex: 1 1 calc(33.333%);
       }
     }
   }
