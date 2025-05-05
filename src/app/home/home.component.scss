@@ -60,7 +60,7 @@
 }
 
 .best-seller-section {
-  padding: 4em 1rem 6rem 1rem; 
+  padding: 4em 2rem 6rem 2rem;
   background-color: var(--background-secondary);
   text-align: center;
   display: flex;
@@ -73,26 +73,60 @@
     margin-bottom: 3rem;
   }
 
-  .card-list {
+  .best-seller-list {
     max-width: 1060px;
     width: 100%;
-
     display: flex;
-    justify-content: space-between;
-
     align-items: center;
-
     flex-wrap: wrap;
+    gap: 1rem;
+
+    @media (min-width: 1024px) {
+      flex-wrap: nowrap;
+      gap: 2.5rem;
+    }
 
     .item {
       flex: 1 1 100%;
       display: flex;
       justify-content: center;
       margin-bottom: 2rem;
+    }
+  }
+}
 
-      @media (min-width: 1024px) {
-        flex: 1 1 calc(33.333%);
-      }
+.review-section {
+  padding: 4em 2rem 6rem 2rem;
+  background-color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-weight: 300;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+  }
+
+  .review-list {
+    max-width: 1060px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media (min-width: 1024px) {
+      flex-wrap: nowrap;
+      gap: 1.5rem;
+    }
+
+    .item {
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
     }
   }
 }

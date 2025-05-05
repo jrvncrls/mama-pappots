@@ -9,6 +9,7 @@
   --p: 300 1rem / 1.5em var(--ff);
   --caption: 300 0.875rem / 1.5em var(--ff);
   --primary-color: hsl(90, 80%, 20%, 100%);
+  --secondary-color: hsl(34, 63%, 89%, 80%);
   --text-primary: hsl(30, 50%, 10%, 80%);
   --white: hsl(0, 0%, 100%, 100);
   --text-light: hsl(30, 50%, 10%, 60%);
@@ -75,4 +76,8 @@ label {
 
 .fade-in-delay-2 {
   animation-delay: 0.6s;
+}
+
+.fade-in-delay-3 {
+  animation-delay: 0.9s;
 }

@@ -17,12 +17,22 @@
     </div>
   </section>
 
-  <section class="best-seller-section">
+  <section class="best-seller-section fade-in-text fade-in-delay-3">
     <h1>Our Best Sellers</h1>
 
-    <div class="card-list fade-in-text fade-in-delay-1">
+    <div class="best-seller-list">
       @for (item of BEST_SELLERS; track $index) {
       <app-best-seller-card class="item" [item]="item"></app-best-seller-card>
+      }
+    </div>
+  </section>
+
+  <section class="review-section fade-in-text fade-in-delay-3">
+    <h1>People Love Notes</h1>
+
+    <div class="review-list fade-in-text fade-in-delay-1">
+      @for (item of LOVE_NOTES; track $index) {
+      <app-review-card class="item" [item]="item"></app-review-card>
       }
     </div>
   </section>
