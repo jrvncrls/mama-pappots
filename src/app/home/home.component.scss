@@ -1,19 +1,19 @@
 .hero-section {
   width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
   @media (min-width: 1024px) {
     height: 690px;
-    background-image: url("/images/hero.png");
+    background-image: url("/images/hero.webp");
     display: flex;
     justify-content: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: 1440px) {
     height: 890px;
+    background-size: cover;
   }
 
   .hero-content {
